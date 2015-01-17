@@ -1,1 +1,3 @@
-# My Dotfiles
+# dotfiles
+
+dotfiles for my most used applications
