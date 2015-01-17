@@ -1,6 +1,7 @@
-"   Filename: .vimrc                                                         "
-"                                                                            "
-"                                                                            "
+" vimrc                                                       "
+" KatsumeBlisk                                                                         "
+" 17 January 2015
+""
 " Sections:                                                                  "
 "   01. General ................. General Vim behavior                       "
 "   02. Events .................. General autocmd events                     "
@@ -62,7 +63,7 @@ set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
 set ruler                 " Always show info along bottom.
 set showmatch
-set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
+set statusline=%<%F\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 set visualbell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
