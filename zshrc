@@ -2,9 +2,10 @@
 # KatsumeBlisk
 # 17 January 2015
 
-# Enables improved autocompletion
-autoload -U compinit
+# Enables improved autocompletion and colors
+autoload -U compinit colors
 compinit
+colors
 
 # pkgfile hook for Arch
 distro=$(uname -r | grep ARCH)
