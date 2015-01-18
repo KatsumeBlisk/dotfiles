@@ -7,6 +7,10 @@ autoload -U compinit colors
 compinit
 colors
 
+# $PATH
+typeset -U PATH
+PATH=(~/bin ~/scripts $PATH)
+
 # pkgfile hook for Arch
 distro=$(uname -r | grep ARCH)
 if [[ $distro ]]
