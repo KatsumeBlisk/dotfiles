@@ -1,8 +1,9 @@
 #!/bin/bash
 # setup.sh
 # KatsumeBlisk
-# variables
+# 18 January 2015
 
+# variables
 dir=~/dotfiles                    # dotfiles directory
 #olddir=~/dotfiles_old             # old dotfiles backup directory
 files="spectrwm.conf tmux.conf vimrc Xresources xinitrc zshrc"    # list of files/folders to symlink in homedir
