@@ -7,9 +7,6 @@ autoload -U compinit colors
 compinit
 colors
 
-# $PATH
-typeset -U PATH
-PATH=(~/bin ~/scripts $PATH)
 
 # pkgfile hook for Arch
 distro=$(uname -r | grep ARCH)
@@ -65,3 +62,6 @@ fi
 PROMPT="%F{yellow%}%B%n%f:%F{blue%}%B%M%f%{$reset_color%}%F{green}%B %3~ %f %{$reset_color%}
 %F{cyan}%B %# %f%{$reset_color%}"
 #RPROMPT="%F{yellow%}%B%n%f:%{$reset_color%}%F{green}%B%3~ %f %{$reset_color%}"
+# $PATH
+
+source ~/.zshenv
