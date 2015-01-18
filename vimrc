@@ -71,7 +71,7 @@ set visualbell
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent            " auto-indent
 set tabstop=8             " tab spacing
-set softtabstop=8         " unify
+set softtabstop=0         " unify
 set shiftwidth=8          " indent/outdent by 8 columns
 set shiftround            " always indent/outdent to the nearest tabstop
 set smartindent           " automatically insert one extra level of indentation
