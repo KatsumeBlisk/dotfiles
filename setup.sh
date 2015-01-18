@@ -5,7 +5,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="spectrwm.conf tmux.conf vimrc zshrc"    # list of files/folders to symlink in homedir
+files="spectrwm.conf tmux.conf vimrc zshenv zshrc"    # list of files/folders to symlink in homedir
 
 #
 
