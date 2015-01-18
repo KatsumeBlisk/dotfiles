@@ -64,4 +64,5 @@ PROMPT="%F{yellow%}%B%n%f:%F{blue%}%B%M%f%{$reset_color%}%F{green}%B %3~ %f %{$r
 #RPROMPT="%F{yellow%}%B%n%f:%{$reset_color%}%F{green}%B%3~ %f %{$reset_color%}"
 # $PATH
 
-source ~/.zshenv
+typeset -U path
+path=(~/bin ~/scripts $path)
