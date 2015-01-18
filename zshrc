@@ -61,5 +61,3 @@ fi
 PROMPT="%F{yellow%}%B%n%f:%F{blue%}%B%M%f%{$reset_color%}%F{green}%B %3~ %f %{$reset_color%}
 %F{cyan}%B %# %f%{$reset_color%}"
 #RPROMPT="%F{yellow%}%B%n%f:%{$reset_color%}%F{green}%B%3~ %f %{$reset_color%}"
-
-
