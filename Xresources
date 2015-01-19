@@ -2,13 +2,13 @@
 ! KatsumeBlisk
 ! 18 January 2015
 
-Xft.dpi:  180
-Xft.autohint: 0
-Xft.lcdfilter:  lcddefault
-Xft.hintstyle:  hintfull
-Xft.hinting:  1
-Xft.antialias:  1
-Xft.rgba: rbg
+!Xft.dpi:  180
+!Xft.autohint: 0
+!Xft.lcdfilter:  lcddefault
+!Xft.hintstyle:  hintfull
+!Xft.hinting:  1
+!Xft.antialias:  1
+!Xft.rgba: rbg
 
 URxvt*termName: screen-256color
 URxvt*geometry: 240x84
