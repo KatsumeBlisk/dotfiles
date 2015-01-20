@@ -34,8 +34,8 @@ URxvt*background: #1C1C1C
 URxvt*foreground: White
 URxvt*colorUL: white
 URxvt*underlineColor: white
-URxvt*font: -xos4-terminus-medium-*-*-*-28-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:28
-URxvt*boldFont: -xos4-terminus-bold-*-*-*-28-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:28
+URxvt*font: -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:14
+URxvt*boldFont: -xos4-terminus-bold-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:14
 URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=28
 URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=28
 URxvt*saveLines: 0
