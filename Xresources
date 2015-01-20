@@ -27,7 +27,7 @@ URxvt*scrollBar_floating: false
 URxvt*fading: 30
 URxvt*utmpInhibit: false
 URxvt*urgentOnBell: false
-URxvt*visualBell: true
+URxvt*visualBell: false
 URxvt*mapAlert: true
 URxvt*mouseWheelScrollPage: false
 URxvt*background: #1C1C1C
@@ -36,8 +36,8 @@ URxvt*colorUL: white
 URxvt*underlineColor: white
 URxvt*font: -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:pixelsize:14
 URxvt*boldFont: -xos4-terminus-bold-*-*-*-14-*-*-*-*-*-iso8859-15,xft:terminus:bold:pixelsize:14
-URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=28
-URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=28
+URxvt*italicFont: xft:Bitstream Vera Sans Mono:italic:autohint=true:pixelsize=14
+URxvt*boldItalicFont: xft:Bitstream Vera Sans Mono:bold:italic:autohint=true:pixelsize=14
 URxvt*saveLines: 0
 URxvt*buffered: true
 URxvt*hold: false
