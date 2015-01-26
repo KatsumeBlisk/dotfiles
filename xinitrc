@@ -5,7 +5,7 @@
 
 xrdb -merge ~/.Xresources
 
-feh --bg-scale ~/pictures/lights.png
+feh --bg-scale ~/pictures/gnu.png
 
 exec spectrwm
 
