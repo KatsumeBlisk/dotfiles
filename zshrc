@@ -58,11 +58,13 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
 fi
 
 
+
 #PROMPT
-PROMPT="%F{yellow%}%B%n%f:%F{blue%}%B%M%f%{$reset_color%}%F{green}%B %3~ %f %{$reset_color%}
-%F{cyan}%B %# %f%{$reset_color%}"
-#RPROMPT="%F{yellow%}%B%n%f:%{$reset_color%}%F{green}%B%3~ %f %{$reset_color%}"
+PROMPT="$fg_bold[yellow] %n$fg_bold[white]:$fg_bold[blue]%M%{$reset_color%}$fg_bold[green] %3~  %{$reset_color%}
+$fg_bold[cyan]> %{$reset_color%}"
 # $PATH
 
 typeset -U path
 path=(~/bin ~/scripts $path)
+alias ls="ls --color=auto"
+
