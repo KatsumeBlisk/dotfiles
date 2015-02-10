@@ -12,7 +12,7 @@ colors
 distro=$(uname -r | grep ARCH)
 if [[ $distro ]]
 then 
-  source /usr/share/doc/pkgfile/command-not-found.zsh
+#  source /usr/share/doc/pkgfile/command-not-found.zsh
 fi
 
 # Fix navigation keys
