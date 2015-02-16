@@ -9,11 +9,11 @@ colors
 
 
 # pkgfile hook for Arch
-distro=$(uname -r | grep ARCH)
-if [[ $distro ]]
-then 
+#distro=$(uname -r | grep ARCH)
+#if [[ $distro ]]
+#then 
 #  source /usr/share/doc/pkgfile/command-not-found.zsh
-fi
+#fi
 
 # Fix navigation keys
 # create a zkbd compatible hash;
