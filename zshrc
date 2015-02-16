@@ -1,19 +1,14 @@
 # zshrc
 # KatsumeBlisk
-# 16 February 2015
+# 17 January 2015
 
 # Enables improved autocompletion and colors
 autoload -U compinit colors
 compinit
 colors
 
-
-# pkgfile hook for Arch
-#distro=$(uname -r | grep ARCH)
-#if [[ $distro ]]
-#then 
-#  source /usr/share/doc/pkgfile/command-not-found.zsh
-#fi
+#pkgfile hook for Arch
+# source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # Fix navigation keys
 # create a zkbd compatible hash;
@@ -60,8 +55,8 @@ fi
 
 
 #PROMPT
-PROMPT="$fg_bold[yellow]   %n$fg_bold[white]:$fg_bold[blue]%M%{$reset_color%}$fg_bold[green] %3~  %{$reset_color%}
-$fg_bold[cyan]-> %{$reset_color%}"
+PROMPT="%{$fg_bold[yellow]%}   %{%n%}%{$fg_bold[white]%}:%{$fg_bold[blue]%}%{%M%}%{$reset_color%}%{$fg_bold[green] %3~  %{$reset_color%}%}
+%{$fg_bold[cyan]%}-> %{$reset_color%}"
 # $PATH
 
 typeset -U path
