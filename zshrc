@@ -1,6 +1,6 @@
 # zshrc
 # KatsumeBlisk
-# 17 January 2015
+# 16 February 2015
 
 # Enables improved autocompletion and colors
 autoload -U compinit colors
