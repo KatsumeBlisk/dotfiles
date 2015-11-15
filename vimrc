@@ -38,7 +38,7 @@ set ofu=syntaxcomplete#Complete
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " enable 256-color mode and syntax highlighting
-colorscheme molokai
+colorscheme badwolf
 set t_Co=256 
 syntax enable            
 
