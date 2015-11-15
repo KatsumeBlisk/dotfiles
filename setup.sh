@@ -1,19 +1,14 @@
-#!/bin/bash
+#/bin/bash
 # setup.sh
 # KatsumeBlisk
-# 18 January 2015
+# 15 November 2015
 
 # variables
 dir=~/dotfiles                    # dotfiles directory
 #olddir=~/dotfiles_old             # old dotfiles backup directory
-files="spectrwm.conf tmux.conf vimrc Xresources xinitrc zshrc"    # list of files/folders to symlink in homedir
+files="spectrwm.conf tmux.conf vim vimrc Xresources xinitrc zshrc"    # list of files/folders to symlink in homedir
 
 #
-
-# create dotfiles_old in homedir
-#echo -n "Creating $olddir for backup of any existing dotfiles in ~ ..."
-#mkdir -p $olddir
-#echo "done"
 
 # change to the dotfiles directory
 echo -n "Changing to the $dir directory ..."
