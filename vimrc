@@ -24,6 +24,12 @@ filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 autocmd FileType make setlocal noexpandtab
 " In Ruby files, use 2 spaces instead of 4 for tabs
 autocmd FileType ruby setlocal sw=2 ts=2 sts=2
+" In Python files, use 4 spaces instead of tabs
+autocmd FileType python setlocal ts=4 sts=4 expandtab
+" In C files, use 8 width tabs instead of spaces
+autocmd FileType c setlocal ts=8 sts=8
+" In Java files, use 4 width tabs instead of spaces
+autocmd FileType java setlocal ts=4 sts=4
 
 " Enable omnicompletion (to use, hold Ctrl+X then Ctrl+O while in Insert mode.
 set ofu=syntaxcomplete#Complete
@@ -32,6 +38,7 @@ set ofu=syntaxcomplete#Complete
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " enable 256-color mode and syntax highlighting
+colorscheme badwolf
 set t_Co=256 
 syntax enable            
 
