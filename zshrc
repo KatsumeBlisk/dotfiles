@@ -57,6 +57,7 @@ fi
 #PROMPT
 PROMPT="%{$fg_bold[yellow]%}   %{%n%}%{$fg_bold[white]%}:%{$fg_bold[blue]%}%{%M%}%{$reset_color%}%{$fg_bold[green] %3~  %{$reset_color%}%}
 %{$fg_bold[cyan]%}-> %{$reset_color%}"
+
 # $PATH
 
 typeset -U path
