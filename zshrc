@@ -55,15 +55,10 @@ fi
 
 
 #PROMPT
-<<<<<<< HEAD
 #PROMPT="%{$fg_bold[yellow]%}   %{%n%}%{$fg_bold[white]%}:%{$fg_bold[blue]%}%{%M%}%{$reset_color%}%{$fg_bold[green] %3~  %{$reset_color%}%}
 #%{$fg_bold[cyan]%}-> %{$reset_color%}"
 PROMPT="%{$fg_bold[cyan]%}-> %{$reset_color%}"
-=======
-PROMPT="%{$fg_bold[yellow]%}   %{%n%}%{$fg_bold[white]%}:%{$fg_bold[blue]%}%{%M%}%{$reset_color%}%{$fg_bold[green] %3~  %{$reset_color%}%}
-%{$fg_bold[cyan]%}-> %{$reset_color%}"
 
->>>>>>> d0b633958fb899ea0a5a72d3ec2471f333e76985
 # $PATH
 
 typeset -U path
