@@ -9,5 +9,7 @@ xrdb -merge ~/.Xresources
 
 nitrogen --restore &
 
+seq 0 1 | xargs -l1 -I@ compton -b -d :0.@
+
 exec spectrwm
 
