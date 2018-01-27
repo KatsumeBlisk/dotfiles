@@ -13,5 +13,6 @@ seq 0 1 | xargs -l1 -I@ compton -b -d :0.@
 
 setxkbmap -option caps:ctrl_modifier
 
-exec spectrwm
+#exec spectrwm
+exec dwm
 
