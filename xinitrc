@@ -5,14 +5,10 @@
 
 xrdb -merge ~/.Xresources
 
-#xrandr --output VGA1 --auto --output LVDS1 --auto --right-of VGA1 
-
-nitrogen --restore &
-
-seq 0 1 | xargs -l1 -I@ compton -b -d :0.@
+bgs /home/d9a/pictures/QzzLgE6.png &
 
 setxkbmap -option caps:ctrl_modifier
 
-#exec spectrwm
-exec dwm
+exec spectrwm
+#exec dwm
 
