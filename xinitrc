@@ -9,6 +9,6 @@ bgs /home/d9a/pictures/QzzLgE6.png &
 
 setxkbmap -option caps:ctrl_modifier
 
-exec spectrwm
-#exec dwm
+nm-applet &
+exec dwm
 
