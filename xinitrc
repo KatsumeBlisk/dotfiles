@@ -13,7 +13,7 @@ nm-applet &
 
 while true
 do
-	xsetroot -name "$(date +%H:%M) MST | $(date -u +%H:%M) UTC"
+	xsetroot -name "$(cat /sys/class/power_supply/BAT0/capacity)% | $(date +%H:%M) MST | $(date -u +%H:%M) UTC"
 	sleep 1;
 done &
 
