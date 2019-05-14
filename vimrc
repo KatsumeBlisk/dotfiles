@@ -39,7 +39,7 @@ set ofu=syntaxcomplete#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " enable 256-color mode and syntax highlighting
 set background=dark
-colorscheme solarized
+colorscheme sourcerer
 set t_Co=256 
 syntax enable            
 
