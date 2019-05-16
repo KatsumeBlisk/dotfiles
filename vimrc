@@ -39,7 +39,8 @@ set ofu=syntaxcomplete#Complete
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " enable 256-color mode and syntax highlighting
 set background=dark
-colorscheme sourcerer
+colorscheme gruvbox
+set termguicolors
 set t_Co=256 
 syntax enable            
 
