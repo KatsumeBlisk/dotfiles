@@ -6,7 +6,8 @@
 xrdb -merge ~/.Xresources
 
 #bgs /home/d9a/pictures/QzzLgE6.png &
-feh --bg-scale /home/d9a/Pictures/04121_windwaterfireearth_1920x1080.jpg &
+#feh --bg-scale /home/zlofgren/Pictures/04121_windwaterfireearth_1920x1080.jpg &
+xsetroot -solid "#282828"
 
 setxkbmap -option caps:ctrl_modifier
 
