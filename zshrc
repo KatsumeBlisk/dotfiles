@@ -65,6 +65,8 @@ PROMPT="%{$fg_bold[green]%}%3~%{$reset_color%}%{$fg_bold[cyan]%} > %{$reset_colo
 typeset -U path
 path=(~/bin ~/scripts $path)
 alias ls="ls --color=auto"
+alias vim="nvim"
+alias mutt="neomutt"
 unset SSH_ASKPASS
 
 function chpwd() {
