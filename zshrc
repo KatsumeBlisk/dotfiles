@@ -1,6 +1,6 @@
 # zshrc
-# KatsumeBlisk
-# 17 January 2015
+# Zack Lofgren
+# 17 May 2019
 
 # Enables improved autocompletion and colors
 autoload -U compinit colors
