@@ -7,13 +7,17 @@ xrdb -merge ~/.Xresources
 
 xsetroot -solid "#282828"
 current_time=$(date "+%Y %b %d %H:%M")
-xsetroot -name " 🗲 $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time | Getting weather. . . "
+xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time | Getting weather. . . "
 
 setxkbmap -option caps:ctrl_modifier
-let timer=1800
+let timer=600
 while true
 do
-	if [ $timer -eq 1800 ]; then
+	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
+	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
+		power="🗲 $power"
+	fi
+	if [ $timer -eq 600 ]; then
 		let timer=0;
 		wget -q --spider http://wttr.in
 		if [ $? -eq 0 ]; then
@@ -23,7 +27,7 @@ do
 		fi
 	fi
 	current_time=$(date "+%Y %b %d %H:%M")
-	xsetroot -name " 🗲 $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time | $weather "
+	xsetroot -name " $power | $current_time | $weather"
 	let timer=$timer+1
 	sleep 1
 done &
