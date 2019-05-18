@@ -1,1 +1,0 @@
-/home/zlofgren/dotfiles/vim

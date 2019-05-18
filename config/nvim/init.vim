@@ -1,23 +1,7 @@
-" vimrc                                                       "
-" KatsumeBlisk                                                                         "
-" 17 January 2015
+" init.vim                                                "
+" Zack Lofgren                                                                         "
+" 19 May 2019
 ""
-" Sections:                                                                  "
-"   01. General ................. General Vim behavior                       "
-"   02. Events .................. General autocmd events                     "
-"   03. Theme/Colors ............ Colors, fonts, etc.                        "
-"   04. Vim UI .................. User interface behavior                    "
-"   05. Text Formatting/Layout .. Text, tab, indentation related             "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 01. General                                                                "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible         " get rid of Vi compatibility mode. SET FIRST!
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 02. Events                                                                 "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
 
 " In Makefiles DO NOT use spaces instead of tabs
@@ -31,19 +15,14 @@ autocmd FileType c setlocal ts=8 sts=8
 " In Java files, use 4 width tabs instead of spaces
 autocmd FileType java setlocal ts=4 sts=4
 
-" Enable omnicompletion (to use, hold Ctrl+X then Ctrl+O while in Insert mode.
-set ofu=syntaxcomplete#Complete
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " enable 256-color mode and syntax highlighting
 set background=dark
 colorscheme gruvbox
 set termguicolors
-set t_Co=256 
 syntax enable            
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Prettify Markdown files
 augroup markdown
@@ -60,8 +39,6 @@ else
   match OverLength /\%81v.\+/
 endif
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 04. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set number                " show line numbers
 set numberwidth=6         " make the number gutter 6 characters wide
@@ -86,5 +63,3 @@ set shiftround            " always indent/outdent to the nearest tabstop
 set smartindent           " automatically insert one extra level of indentation
 set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
-
-

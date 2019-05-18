@@ -2,13 +2,16 @@
 # setup.sh
 # Zack Lofgren
 # 17 May 2019
-
-# variables
-files="config tmux.conf Xresources xinitrc zshrc"    # list of files/folders to symlink in homedir
+dir=$(pwd)
 
 # create symlinks for each file
-for file in $files; do
-    echo "Creating symlink to $file in home directory."
-    ln -s ./$file ~/.$file
-done
+ln -s $dir/tmux.conf ~/.tmux.conf
+ln -s $dir/Xresources ~/.Xresources
+ln -s $dir/xinitrc ~/.xinitrc
+ln -s $dir/zshrc ~/.zshrc
 
+if [ ! -d "~/.config" ]; then
+	mkdir ~/.config
+fi
+
+ln -s $dir/config/nvim ~/.config/nvim
