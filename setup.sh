@@ -10,7 +10,7 @@ ln -s $dir/Xresources ~/.Xresources
 ln -s $dir/xinitrc ~/.xinitrc
 ln -s $dir/zshrc ~/.zshrc
 
-if [ ! -d "~/.config" ]; then
+if [ ! -d ~/.config ]; then
 	mkdir ~/.config
 fi
 
