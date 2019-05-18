@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 # setup.sh
 # Zack Lofgren
 # 17 May 2019
