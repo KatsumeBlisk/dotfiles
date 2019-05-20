@@ -3,7 +3,7 @@
 # Zack Lofgren
 # 17 May 2019
 
-xrdb -merge ~/.Xresources
+mpd
 
 xsetroot -solid "#282828"
 current_time=$(date "+%Y %b %d %H:%M")
@@ -13,6 +13,7 @@ setxkbmap -option caps:ctrl_modifier
 let timer=600
 while true
 do
+	music="$(mpc --format "%artist% - %title% - %album%" current)"
 	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
 	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
 		power="🗲 $power"
@@ -27,7 +28,7 @@ do
 		fi
 	fi
 	current_time=$(date "+%Y %b %d %H:%M")
-	xsetroot -name " $power | $current_time | $weather"
+	xsetroot -name " $music | $power | $current_time | $weather"
 	let timer=$timer+1
 	sleep 1
 done &
