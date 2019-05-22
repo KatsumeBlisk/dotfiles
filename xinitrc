@@ -9,11 +9,12 @@ xsetroot -solid "#282828"
 current_time=$(date "+%Y %b %d %H:%M")
 xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time | Getting weather. . . "
 
+unclutter &
 setxkbmap -option caps:ctrl_modifier
 let timer=600
 while true
 do
-	music="$(mpc --format "%artist% - %title% - %album%" current)"
+	music="$(mpc --format "%artist% - %title%" current)"
 	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
 	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
 		power="🗲 $power"
