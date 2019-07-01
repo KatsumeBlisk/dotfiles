@@ -62,7 +62,6 @@ PROMPT="%{$fg_bold[yellow]%}%n%{$reset_color%}%{$fg_bold[white]%}:%{$fg_bold[blu
 
 typeset -U path
 path=(~/bin ~/scripts $path)
-alias ls="ls --color=auto"
 alias vim="nvim"
 alias mutt="neomutt"
 unset SSH_ASKPASS
