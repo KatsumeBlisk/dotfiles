@@ -5,6 +5,7 @@
 dir=$(pwd)
 
 # create symlinks for each file
+ln -s $dir/irssi ~/.irssi
 ln -s $dir/tmux.conf ~/.tmux.conf
 ln -s $dir/xsession ~/.xsession
 ln -s $dir/zshrc ~/.zshrc
