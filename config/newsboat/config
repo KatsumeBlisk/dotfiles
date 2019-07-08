@@ -25,7 +25,7 @@ bind-key ^t next-unread
 
 color listnormal white default
 color listfocus yellow black standout
-color listnormal_unread white default bold
+color listnormal_unread green default
 color listfocus_unread yellow black standout 
 color info yellow black bold
 color article white default
