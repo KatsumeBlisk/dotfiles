@@ -8,6 +8,7 @@ dir=$(pwd)
 ln -s $dir/irssi ~/.irssi
 ln -s $dir/tmux.conf ~/.tmux.conf
 ln -s $dir/xsession ~/.xsession
+ln -s $dir/xinitrc ~/.xinitrc
 ln -s $dir/zshrc ~/.zshrc
 
 if [ ! -d ~/.config ]; then
