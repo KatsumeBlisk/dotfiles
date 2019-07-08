@@ -1,0 +1,43 @@
+super + Return
+	$TERMINAL
+
+super + e
+	TERMINAL -e neomutt
+
+super + m
+	TERMINAL -e ncmpcpp
+
+super + n
+	$TERMINAL -e newsboat
+
+super + s
+	$BROWSER duckduckgo.com
+
+XF86AudioMute
+	pulsemixer --toggle-mute
+
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +2
+
+shift + XF86AudioRaiseVolume
+	pulsemixer --change-volume +10
+
+XF86AudioLowerVolume
+	pulsemixer --change-volume -2
+
+shift + XF86AudioLowerVolume
+	pulsemixer --change-volume -10
+
+XF86AudioNext
+	mpc next
+
+XF86AudioPrev
+	mpc prev
+
+XF86AudioPlay
+	mpc toggle
+
+XF86AudioStop
+	mpc stop
+
+
