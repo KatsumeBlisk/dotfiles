@@ -5,6 +5,8 @@ while true
 do
 	music="$(mpc --format "%artist% - %title%" current)"
 	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
+	volume="$(amixer get Master | awk '$0~/%/{print $4}' | tr -d '[]')"
+	muted="$(amixer get Master | awk '$0~/%/{print $6}' | tr -d '[]')"
 	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
 		power="🗲 $power"
 	fi
@@ -17,8 +19,13 @@ do
 			weather="Weather unavailable"
 		fi
 	fi
+
+	if [ $muted != 'off' ];
+	then
+		volume="$volume (M)"
+	fi
 	current_time=$(date "+%Y %b %d %H:%M")
-	xsetroot -name " $music | $power | $current_time | $weather"
+	xsetroot -name " $music | $power | vol: $volume | $current_time | $weather"
 	let timer=$timer+1
 	sleep 1
 done
