@@ -40,4 +40,5 @@ XF86AudioPlay
 XF86AudioStop
 	mpc stop
 
-
+shift + super + l
+	mpc pause; pauseallmpv; displayoff; slock
