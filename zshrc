@@ -62,7 +62,6 @@ PROMPT="%{$fg_bold[yellow]%}%n%{$reset_color%}%{$fg_bold[white]%}:%{$fg_bold[blu
 
 typeset -U path
 path=(~/.local/bin $path)
-BROWSER=surf
 alias vim="nvim"
 alias mutt="neomutt"
 unset SSH_ASKPASS
