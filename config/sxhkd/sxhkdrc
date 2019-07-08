@@ -2,10 +2,10 @@ super + Return
 	$TERMINAL
 
 super + e
-	TERMINAL -e neomutt
+	$TERMINAL -e neomutt
 
 super + m
-	TERMINAL -e ncmpcpp
+	$TERMINAL -e ncmpcpp
 
 super + n
 	$TERMINAL -e newsboat
