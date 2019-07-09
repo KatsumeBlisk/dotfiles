@@ -1,0 +1,33 @@
+sw_volume: 98
+audio_device_state:1:pulse audio
+audio_device_state:1:toggle_visualizer
+state: play
+current: 4
+time: 2.731000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:FamilyJules/Aria Awakened/FamilyJules - Aria Awakened - 07 Trial of Thunder (5-3).flac
+1:MegaDriver/Metalhog/MegaDriver - Metalhog - 01 Hedgehog Metal - Greenhill Zone (Sonic The Hedgehog).flac
+2:MegaDriver/Metalhog/MegaDriver - Metalhog - 02 Emerald Hill Zone (Sonic The Hedgehog 2).flac
+3:MegaDriver/Metalhog/MegaDriver - Metalhog - 03 Chemical Plant Zone (Sonic The Hedgehog 2).flac
+4:MegaDriver/Metalhog/MegaDriver - Metalhog - 04 Marble Zone (Sonic The Hedgehog).flac
+5:MegaDriver/Metalhog/MegaDriver - Metalhog - 05 Flying Battery Zone (Sonic & Knuckles).flac
+6:MegaDriver/Metalhog/MegaDriver - Metalhog - 06 Casino Night Zone (Sonic The Hedgehog 2).flac
+7:MegaDriver/Metalhog/MegaDriver - Metalhog - 07 Starlight Zone (Sonic The Hedgehog).flac
+8:MegaDriver/Metalhog/MegaDriver - Metalhog - 08 Scrap Brain (Sonic The Hedgehog).flac
+9:MegaDriver/Metalhog/MegaDriver - Metalhog - 09 Scrap Brain Zone (Sonic The Hedgehog)(Master System).flac
+10:MegaDriver/Metalhog/MegaDriver - Metalhog - 10 Metropolis Zone (Sonic The Hedgehog 2).flac
+11:MegaDriver/Metalhog/MegaDriver - Metalhog - 11 Ice Cap Zone (Sonic The Hedgehog 3).flac
+12:MegaDriver/Metalhog/MegaDriver - Metalhog - 12 Live And Learn (Sonic Adventure 2).flac
+13:MegaDriver/Metalhog/MegaDriver - Metalhog - 13 Metalhog (Dr Eggman Medley).flac
+14:MegaDriver/Metalhog/MegaDriver - Metalhog - 14 Mystic Cave (Sonic The Hedgehog 2).flac
+15:MegaDriver/Metalhog/MegaDriver - Metalhog - 15 Sonic Boom (Sonic CD).flac
+16:MegaDriver/Metalhog/MegaDriver - Metalhog - 16 City Escape (Sonic Adventure 2).flac
+17:MegaDriver/Metalhog/MegaDriver - Metalhog - 17 La Leyenda De Sonic.flac
+playlist_end
