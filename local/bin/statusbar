@@ -4,7 +4,7 @@ xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time |
 timer=600
 while true
 do
-	music="$(mpc --format "%artist% - %title%" current)"
+	music="$(mpc --format "%title%" current)"
 	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
 	volume="$(pulsemixer --get-volume | cut -d ' ' -f 1)"
 	muted="$(pulsemixer --get-mute)"
