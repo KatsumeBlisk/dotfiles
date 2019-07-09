@@ -14,13 +14,13 @@ XF86AudioMute
 	pulsemixer --toggle-mute
 
 XF86AudioRaiseVolume
-	pulsemixer --change-volume +2
+	pulsemixer --change-volume +5
 
 shift + XF86AudioRaiseVolume
 	pulsemixer --change-volume +10
 
 XF86AudioLowerVolume
-	pulsemixer --change-volume -2
+	pulsemixer --change-volume -5
 
 shift + XF86AudioLowerVolume
 	pulsemixer --change-volume -10
