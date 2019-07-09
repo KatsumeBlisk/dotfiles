@@ -4,9 +4,9 @@ xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time |
 timer=600
 while true
 do
-	music="$(mpc --format "%title%" current)"
+	music="♬ $(mpc --format "%title%" current)"
 	power="$(cat /sys/class/power_supply/BAT0/capacity)%"
-	volume="$(pulsemixer --get-volume | cut -d ' ' -f 1)"
+	volume="🎧 $(pulsemixer --get-volume | cut -d ' ' -f 1)"
 	muted="$(pulsemixer --get-mute)"
 	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
 		power="🗲 $power"
@@ -26,7 +26,7 @@ do
 		volume="$volume (M)"
 	fi
 	current_time=$(date "+%Y %b %d %H:%M")
-	xsetroot -name " $music | $power | vol: $volume | $current_time | $weather"
+	xsetroot -name " $music | $power | $volume | $current_time | $weather"
 	let timer=$timer+1
 	sleep 1
 done
