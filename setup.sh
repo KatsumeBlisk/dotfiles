@@ -16,5 +16,8 @@ if [ ! -d ~/.local ]; then
 fi
 
 ln -s $dir/config/nvim ~/.config/nvim
+ln -s $dir/config/mpd ~/.config/mpd
 ln -s $dir/config/newsboat ~/.config/newsboat
+ln -s $dir/config/sxhkd ~/.config/sxhkd
+
 ln -s $dir/local ~/.local
