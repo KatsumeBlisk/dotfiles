@@ -1,7 +1,4 @@
 #!/bin/sh
-current_time=$(date "+%Y %b %d %H:%M")
-xsetroot -name " $(cat /sys/class/power_supply/BAT0/capacity)% | $current_time | Getting weather. . . "
-timer=600
 while true
 do
 	music="♬ $(mpc --format "%title%" current)"
@@ -11,23 +8,14 @@ do
 	if [ $(cat /sys/class/power_supply/BAT0/status) != "Discharging" ]; then
 		power="🗲 $power"
 	fi
-	if [ $timer -eq 600 ]; then
-		timer=0;
-		wget -q --spider http://wttr.in
-		if [ $? -eq 0 ]; then
-			weather=$(curl "wttr.in/Fort Collins?format=3&u");
-		else
-			weather="Weather unavailable"
-		fi
-	fi
 
 	if [ $muted -eq 1 ];
 	then
 		volume="$volume (M)"
 	fi
 	current_time=$(date "+%Y %b %d %H:%M")
-	xsetroot -name " $music | $power | $volume | $current_time | $weather"
-	let timer=$timer+1
+	xsetroot -name " $music | $power | $volume | $current_time "
+	timer=$((timer+1))
 	sleep 1
 done
 
